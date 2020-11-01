@@ -148,6 +148,7 @@ h3{
     border-radius: 0%;
     border: #7beec7 1px solid;
     margin-top: 30px;
+    animation: bordergrow 4s 1;
 }
 .btn{
     height: 50px;
@@ -157,6 +158,13 @@ h3{
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
+    }
+@keyframes bordergrow{
+   to, from {border:#ffffff 5px solid;}
+    20%{ border-bottom:#7b7e7d 5px solid;}
+    40%{border-right: #7b7e7d 5px solid;}
+    60%{border-top: #7b7e7d 5px solid;}
+    80%{ border-left: #7b7e7d 5px solid; }
 }
 .white-box {
    background-color: #fff;
@@ -305,3 +313,66 @@ h3>i{
     text-transform: uppercase;
     display: inline-block;
 }
+.img-list:hover {
+    cursor: pointer;
+    animation: anti-wiggle 1s ease-in-out;
+  }
+.img-list:hover:after {
+    animation: wiggle 1s ease-in-out;
+  }
+@keyframes wiggle {
+    20% {
+      box-shadow:  inset -5px 0 5px 0 rgba(0,0,0,.4);
+      transform: rotate(7deg);
+    }
+    
+    40% {
+      box-shadow:  inset -11px 0 5px 0 rgba(0,0,0,.4);
+      transform: rotate(-14deg);
+    }
+    
+    60% {
+      box-shadow:  inset -5px 0 5px 0 rgba(0,0,0,.4);
+      transform: rotate(4deg);
+    }
+    
+    80% {
+      box-shadow:  inset -8px 0 5px 0 rgba(0,0,0,.4);
+      transform: rotate(-2deg);
+    }
+    
+    100% {
+      box-shadow:  inset -7px 0 5px 0 rgba(0,0,0,.4);
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes anti-wiggle {
+    20% {
+      transform: translateX(4px) rotate(-7deg);
+    }
+    
+    40% {
+      transform: translateX(-8px)  rotate(14deg);
+    }
+    
+    60% {
+      transform: translateX(2px)  rotate(-4deg);
+    }
+    
+    80% {
+      transform: translateX(-1px)  rotate(2deg);
+    }
+    
+    100% {
+      transform: translateX(0px) rotate(0deg);
+    }
+  }
+  .person:hover {
+    animation: photo 0.2s 1;
+  }
+  @keyframes photo {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.9, 1.1); }
+    75% { transform: scale(0.95, 1.05); }
+  }
