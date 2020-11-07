@@ -9,6 +9,12 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.header-nav{
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
 img{
     overflow: hidden;
 }
@@ -376,3 +382,215 @@ h3>i{
     25% { transform: scale(0.9, 1.1); }
     75% { transform: scale(0.95, 1.05); }
   }
+.header{
+    background:url(./img/home_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:1000px;
+}
+.home-hero{
+    border: 10px solid #60606e;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+.home-hero:before{
+    content: 'we’re';
+    width: 99px;
+    height: 30px;
+    background-color: #7beec7;
+    position: absolute;
+    text-transform: uppercase;
+    top:-40px;
+    left: 45%;
+    font-size: 18px;
+    line-height: 36px;
+}
+.home-hero-text{
+    text-align: center;
+    max-width: 60%;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.half{
+    margin-top:0;
+   transform: translate(0, 10%);
+    position: relative;
+    z-index: 2;
+}
+.left{
+    text-align: left;
+}
+.whyup{
+    text-transform: uppercase;
+}
+.portfolio-item{
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: left;
+}
+.portfolio-item:hover{
+    background-color: #7beec7;
+}
+.portfolio-title{
+    text-align: left;
+}
+.portfolio-img{
+    margin-bottom: 10px;
+}
+.history{
+    margin-bottom: 30px;
+}
+.read-more{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.agency-history{
+    padding-top: 35px;
+}
+.forma-mail{
+    padding: 0;
+}
+.forma{
+    padding: 0;
+    margin-right: 30px;
+}
+.form-contact{
+    margin-bottom: 100px;
+}
+form>.row{
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+form>.row *{
+    background-color: #fefcf9;
+    border-radius: 0;
+}
+form>.row *::-webkit-input-placeholder{
+    color: #cccccc;
+    font-size: 12px;
+    font-weight: 700;
+}
+.contact-info>a{
+color: inherit;
+}
+.bold{
+    font-weight: 700;
+}
+.continue{
+    color: inherit;
+}
+.post_info{
+    text-align: left;
+    margin-top: 30px;
+}
+.post_info *{
+    margin-right: 10px;
+}
+.post_info>p{
+    min-width: 160px;
+}
+.blog_post{
+    margin-bottom: 100px;
+}
+.blog_post:last-child{
+    margin-bottom: 10px;
+}
+.search input{
+    width: 100%;
+}
+.search>input::-webkit-input-placeholder{
+    color: #60606e;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.search{
+    position: relative;
+    margin-bottom: 30px;
+}
+.find{
+    position: absolute;
+    font-size: 30px;
+    right: 0;
+    top: 0;
+    background: transparent;
+    color: #60606e;
+    border: none;
+}
+.lead-side{
+    text-align: left;
+}
+.nav_sidebar{
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.nav_sidebar a{
+    color: #999999;
+    padding-right: 10px;
+    border-bottom: 1px solid #cac9c9;
+}
+.nav_sidebar a:hover{
+    color: #60606e;
+    text-decoration: none;
+    border-bottom: 1px solid #7beec7;
+}
+.side_img{
+    width: 100%;
+}
+.side_post{
+    text-align: left;
+}
+.side_post>p{
+    font-size: 12px;
+    color: #9a9a9a;
+    line-height: 18px;
+}
+.related_post{
+    margin-bottom: 10px;
+}
+.categories li a{
+    width: 90%;
+    display: inline-block;
+    text-align: left;
+}
+.categories li{
+    text-align: right;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid transparent;
+}
+.categories li:hover{
+        border-bottom: 1px solid #9a9a9a;
+}
+.categories li a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+.tag-cloud{
+    margin-top: 20px;
+}
+.tag{
+    display: inline-block;
+    background-color: #e5e5e5;
+    min-width: 67px;
+    color: #999999;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 3px;
+    margin: 3px;
+    
+}
+.tag:hover{
+    text-decoration: none;
+    color: inherit;
+    transform: scale(1.1, 1.1);
+}
